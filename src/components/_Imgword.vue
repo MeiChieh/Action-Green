@@ -1,5 +1,5 @@
 <template>
-<div class='imgword' :id='link'>
+<div class='imgword'>
         <!-- <img :src="`${imgStyle}`" :style="{position: fixed, top: top }" v-show='showBgImg'> -->
         <!-- <img :src="`${imgStyle}`" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
 
@@ -22,10 +22,6 @@ export default {
     name: 'imgword',
     components:{Readmorebtn},
     props:{
-        link:{
-            type: String ,
-            required: false ,
-        },
         imgUrl:{
             type: String ,
             required: true ,

@@ -1,15 +1,16 @@
 <template>
 <div id='layout'>
-    <div id='home'></div>
+    <div id='home' class='link'></div>
     <Firstpage :zIndex='zIndexFirst' :showBgImg='showFirst'></Firstpage>
-    <Imgword :link='about' :imgUrl='imgWord1.url' :title='imgWord1.title' :paragraph='imgWord1.words' :txtBgColor='txtBgColorLight' :txtColor ='deepBlack' :showBgImg='showAlways'></Imgword>    
+    <div id='about' class='link'></div>
+    <Imgword :imgUrl='imgWord1.url' :title='imgWord1.title' :paragraph='imgWord1.words' :txtBgColor='txtBgColorLight' :txtColor ='deepBlack' :showBgImg='showAlways'></Imgword>    
     <Plainwordcard :bgColor='greyWhite' :title='empty' :paragraph='plainWordCard1Para' :flexFirst='plainWordCard1First' :flexSecond='plainWordCard1Second' :flexFirstTxt='plainWordCardtxt1First' :flexSecondTxt='plainWordCardtxt1Second'></Plainwordcard>    
     <Imgword :imgUrl='imgWord2.url' :title='imgWord2.title' :paragraph='imgWord2.words' :txtBgColor='txtBgColorDark' :txtColor ='white' :zIndex='zIndexSecond' :fixed='fixed' :top='top' :showBgImg='showSecond'></Imgword>    
     <Plainwordcard :bgColor='white' :title='empty' :paragraph='plainWordCard2Para' :flexFirst='plainWordCard2First' :flexSecond='plainWordCard2Second' :flexFirstTxt='plainWordCardtxt2First' :flexSecondTxt='plainWordCardtxt2Second' :flexWidth='flex100' :flexWidth0='flex0'></Plainwordcard>    
     <Plainword :word='plainWord1Title' :bgColor='actionGreen'></Plainword>   
     <Imgwordcard :bgImg='imgWordCard1BgImg' :bgTransparent='txtBgColorLight' :title='imgWordCard1Title' :paragraph='empty' :flexFirst='imgWordCard1First' :flexSecond='imgWordCard1Second' :flexFirstTxt='imgWordCardtxt1First' :flexSecondTxt='imgWordCardtxt1Second' :noImgShadow='noImgShadow' :zIndex='zIndexLast' :fixed='fixed' :top='top' :showBgImg='showThird'></Imgwordcard>
     <Plainword :word='plainWord2Title' :bgColor='actionGreen'></Plainword>
-    <div id='donate'></div>
+    <div id='donate' class='link'></div>
     <Whitepage :learnMore='learnMore'></Whitepage>
     <Footer></Footer>
 </div>
@@ -295,16 +296,9 @@ export default {
     background-color: white;
 }
 
-#home{
+.link{
     background: white;
     width: 100vw;
     height: 1vh;
 }
-
-#donate{
-    background: rgba(249,249,249,255);
-    width: 100vw;
-    height: 1vh;
-}
-
 </style>
