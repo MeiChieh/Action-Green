@@ -1,7 +1,7 @@
 <template>
-<div class='firstpage' :id='link'>
+<div class='firstpage'>
     <Navbar></Navbar>
-    <img src="../media/whitegreen-q5s80.jpg" alt="" :style="{zIndex: zIndex}"> 
+    <img src="../media/fs-plasticgrey-q5s80.jpg" alt="" :style="{zIndex: zIndex}"> 
     <!-- <img src="../media/whitegreen-q5s70.jpg" alt="" :style="{zIndex: zIndex}" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
     <!-- <img src="../media/whitegreen-q5s70.jpg" alt="" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
     
@@ -22,10 +22,6 @@ export default {
     name:'firstpage',
     components:{Slideshow, Navbar},
     props:{
-      link:{
-        type: String ,
-        required: true,
-        },
       zIndex: {
         type: Number,
         required: true,
@@ -103,7 +99,8 @@ body{
     color:rgba(1,1,1,0.8);
 }
 #green{
-  color:#3ECF2A;
+  /* color:#3ECF2A; */
+  color: #009900;
   
 }
 

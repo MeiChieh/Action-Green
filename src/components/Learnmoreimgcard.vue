@@ -1,5 +1,5 @@
 <template>
-       <div id='learnmoreimgcard' :style="{backgroundColor: learnMore.color}">
+       <div id='learnmoreimgcard'>
         <div id='cardimg' v-if='learnMore.img != false' :style="{backgroundImage:`url(${showImg})`}" ></div>
         <div id='cardimg' v-else v-show='false'></div>
 
@@ -39,8 +39,9 @@ export default {
     box-shadow: 5px 5px 18px #888888;
     font-size: 17px;
     font-family:Arial, Helvetica, sans-serif;
-    color: #434242;
+    color: white;
     position: relative;
+    background-color: #0375B4;
 }
 
 

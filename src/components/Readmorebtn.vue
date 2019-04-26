@@ -18,7 +18,6 @@ export default {
     name:'readmorebtn',
     data(){return{
         more: 'Read More',
-        isMagnify: false,
         isMinify: false,
 
     }},

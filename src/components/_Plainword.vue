@@ -1,5 +1,5 @@
 <template>
-<div :id='link' class='plainword' :style="{backgroundColor: bgColor}">
+<div class='plainword' :style="{backgroundColor: bgColor}">
     <div id='plainwordtxt'>{{word}}</div>    
 </div>
     
@@ -10,10 +10,6 @@ export default {
     name: 'plainword',
     // props:['word', 'bgColor'],
     props:{
-        link:{
-            type: String,
-            required: false,
-        },
         word:{
             type: String,
             required: true,
@@ -39,7 +35,10 @@ export default {
     align-items: center;
     font-family:sans-serif;  
     font-weight:bold;
-    color:rgba(51,51,51,0.8);
+    /* color:white; */
+    color:rgba(50,50,50);
+    /* text-shadow: 1px 1px 1px rgba(1,1,1,0.5);  */
+
 }
 
 #plainwordtxt{

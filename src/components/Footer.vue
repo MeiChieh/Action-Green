@@ -79,7 +79,7 @@ footer{
 #banner{
     width: 100vw;
     height: 3.5vh;
-    background-color: #3ECF2A;
+    background-color: #009900;
     text-align: center;
     color:white;
     padding: 1em 0em;

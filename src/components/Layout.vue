@@ -1,13 +1,15 @@
 <template>
 <div id='layout'>
-    <Firstpage :link='home' :zIndex='zIndexFirst' :showBgImg='showFirst'></Firstpage>
+    <div id='home'></div>
+    <Firstpage :zIndex='zIndexFirst' :showBgImg='showFirst'></Firstpage>
     <Imgword :link='about' :imgUrl='imgWord1.url' :title='imgWord1.title' :paragraph='imgWord1.words' :txtBgColor='txtBgColorLight' :txtColor ='deepBlack' :showBgImg='showAlways'></Imgword>    
-    <Plainwordcard :bgColor='algaeWhite' :title='empty' :paragraph='plainWordCard1Para' :flexFirst='plainWordCard1First' :flexSecond='plainWordCard1Second' :flexFirstTxt='plainWordCardtxt1First' :flexSecondTxt='plainWordCardtxt1Second'></Plainwordcard>    
+    <Plainwordcard :bgColor='greyWhite' :title='empty' :paragraph='plainWordCard1Para' :flexFirst='plainWordCard1First' :flexSecond='plainWordCard1Second' :flexFirstTxt='plainWordCardtxt1First' :flexSecondTxt='plainWordCardtxt1Second'></Plainwordcard>    
     <Imgword :imgUrl='imgWord2.url' :title='imgWord2.title' :paragraph='imgWord2.words' :txtBgColor='txtBgColorDark' :txtColor ='white' :zIndex='zIndexSecond' :fixed='fixed' :top='top' :showBgImg='showSecond'></Imgword>    
-    <Plainwordcard :bgColor='algaeWhite' :title='empty' :paragraph='plainWordCard2Para' :flexFirst='plainWordCard2First' :flexSecond='plainWordCard2Second' :flexFirstTxt='plainWordCardtxt2First' :flexSecondTxt='plainWordCardtxt2Second' :flexWidth='flex100' :flexWidth0='flex0'></Plainwordcard>    
-    <Plainword :word='plainWord1Title' :bgColor='lightBeige'></Plainword>   
+    <Plainwordcard :bgColor='white' :title='empty' :paragraph='plainWordCard2Para' :flexFirst='plainWordCard2First' :flexSecond='plainWordCard2Second' :flexFirstTxt='plainWordCardtxt2First' :flexSecondTxt='plainWordCardtxt2Second' :flexWidth='flex100' :flexWidth0='flex0'></Plainwordcard>    
+    <Plainword :word='plainWord1Title' :bgColor='actionGreen'></Plainword>   
     <Imgwordcard :bgImg='imgWordCard1BgImg' :bgTransparent='txtBgColorLight' :title='imgWordCard1Title' :paragraph='empty' :flexFirst='imgWordCard1First' :flexSecond='imgWordCard1Second' :flexFirstTxt='imgWordCardtxt1First' :flexSecondTxt='imgWordCardtxt1Second' :noImgShadow='noImgShadow' :zIndex='zIndexLast' :fixed='fixed' :top='top' :showBgImg='showThird'></Imgwordcard>
-    <Plainword :link='donate' :word='plainWord2Title' :bgColor='lightBeige'></Plainword>
+    <Plainword :word='plainWord2Title' :bgColor='actionGreen'></Plainword>
+    <div id='donate'></div>
     <Whitepage :learnMore='learnMore'></Whitepage>
     <Footer></Footer>
 </div>
@@ -29,10 +31,6 @@ export default {
     name:'layout',
     components:{Firstpage, Imgword, Imgwordcard, Plainword, Plainwordcard, Whitepage, Footer},
     data(){return{
-        home:'homeLink',
-        about: 'aboutLink',
-        donate:'donateLink',
-        
 // FirstPage and other parallax elements      
         showFirst: true,
         showAlways: true,
@@ -116,7 +114,7 @@ export default {
                 width: '500',
                 title: 'Join Action Green Beach Cleanup',
                 paragraph: 'We organize beach cleanup event every month, join us and  have fun cleaning up the beach together!',
-                color:'#d5e1df',
+                // color:'#d5e1df',
             },
             learnMore2:{
                 img:false,
@@ -124,7 +122,7 @@ export default {
                 width: '325',
                 title:'One Off Donation',
                 paragraph:'Make one off donation to Action Green. We would send you Action Green stickers and one poster of your choice. ',
-                color:'#e3eaa7',
+                // color:'#e3eaa7',
             },
             learnMore3:{
                 img:false,
@@ -132,9 +130,11 @@ export default {
                 width: '325',
                 title:'Monthly Donation',
                 paragraph:'Make monthly donation to Action Green. We would send you Action Green stickers, two posters of your choice and a Action Green t-shirt.',
-                color:'#b5e7a0',
+                // // color:'#b5e7a0',
+                // color: '#0375B4',
             },
         },
+        about:'about',
         fixed:'fixed',  
         top:'0vh',    
         flex50: '50%',
@@ -144,6 +144,7 @@ export default {
         wallWhite: 'rgb(248, 248, 255)',
         algaeWhite: '#E6EBEE',
         white: 'white',
+        greyWhite:'rgba(249, 249, 249, 255)',
         
         paraColorBlack:'black',  
         linearWhite:'#fff',
@@ -151,20 +152,16 @@ export default {
         linearDark:'linear-gradient(to bottom, rgba(0,0,0,0), rgba(1,1,1,0.8))',
         softBlack:'#595959',
         deepBlack:'rgba(1,1,1,0.8)',
-        // lightBeige:'#D8D8D8',
         lightBeige:'#86af49',
+        actionGreen: '#009900',
         white:'white',
         txtBgColorDark:' rgba(1,1,1,0.3)',  
         txtBgColorLight:' rgba(255,255,255,0.3)', 
         BgColorLight:' rgba(255,255,255,0.1)', 
         noImgShadow:'none',
-        // lightBlue:'lightblue',        
-        // lightYellow:'#ffeb99',
-        // lightGreen:'lightgreen',
         lightBlue:'#d5e1df',        
         lightYellow:'#e3eaa7',
         lightGreen:'#b5e7a0',
-
         noBg:'rgba(0,0,0,0)',
         textBoxShow: false,  
         bigTxt: '25px',
@@ -172,7 +169,6 @@ export default {
     }},
     mounted(){
         window.addEventListener('scroll', this.scrollPros);
-        // console.log(document.documentElement.scrollHeight)
     },
 
     methods:{
@@ -184,6 +180,8 @@ export default {
             const ratio = screenW/screenH;
             const y = window.pageYOffset;
             const height = el.scrollHeight;
+
+
             
 
             // if device == phone
@@ -295,6 +293,18 @@ export default {
     width: 100vw;
     height: 100vh;
     background-color: white;
+}
+
+#home{
+    background: white;
+    width: 100vw;
+    height: 1vh;
+}
+
+#donate{
+    background: rgba(249,249,249,255);
+    width: 100vw;
+    height: 1vh;
 }
 
 </style>

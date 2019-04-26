@@ -2,7 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
-import Donate from "./views/Donate.vue"
+import Donate from "./views/Donate.vue";
 
 Vue.use(Router);
 

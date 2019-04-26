@@ -32,7 +32,7 @@ export default {
     color:  #434242;
     font-size: 17px;
     font-weight: 900;
-    background-color: salmon;
+    background-color: #ffce00;
     border-radius: 6px;
     text-align: center;
     width: 6em;

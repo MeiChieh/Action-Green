@@ -32,7 +32,7 @@ export default {
     margin: 0;
     box-sizing: border-box;
     font-size: 20px;
-    background-color: #E6EBEE;
+    background-color: rgba(249, 249, 249, 255);
     padding: 0.5em 0em;
 }
 .flex1{
