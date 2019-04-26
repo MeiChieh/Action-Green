@@ -38,7 +38,7 @@ export default {
     width: 6em;
     padding: 0.4em;
     box-shadow: 1px 1px 2px rgba(1,1,1,0.4);
-    transition: transform 0.2s;
+    transition: transform 0.2s ease-out;
     margin: auto;
 }
 
