@@ -1,3 +1,7 @@
+This is a frontend project for propagating the idea of disposable-plastic-use reduction. 
+
+
+
 # sock
 
 ## Project setup
