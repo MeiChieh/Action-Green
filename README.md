@@ -1,5 +1,7 @@
 This is a frontend project propagating the idea of disposable-plastic-use reduction. 
 
+It is built with Vue.js cli and fully responsiive. 
+
 Checkout the site: https://action-green-meicc.netlify.com/#/
 
 
