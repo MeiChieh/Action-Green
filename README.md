@@ -1,4 +1,4 @@
-This is a frontend project for propagating the idea of disposable-plastic-use reduction. 
+This is a frontend project propagating the idea of disposable-plastic-use reduction. 
 
 
 
