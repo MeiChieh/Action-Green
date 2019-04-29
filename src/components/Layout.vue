@@ -154,7 +154,8 @@ export default {
         softBlack:'#595959',
         deepBlack:'rgba(1,1,1,0.8)',
         lightBeige:'#86af49',
-        actionGreen: '#009900',
+        // actionGreen: '#009900',
+        actionGreen: '#82b74b',
         white:'white',
         txtBgColorDark:' rgba(1,1,1,0.3)',  
         txtBgColorLight:' rgba(255,255,255,0.3)', 
@@ -299,6 +300,6 @@ export default {
 .link{
     background: white;
     width: 100vw;
-    height: 1vh;
+    height: 0.1vh;
 }
 </style>

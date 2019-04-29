@@ -23,8 +23,8 @@ nav{
   font-size: 13px;
   display:flex;
   justify-content: flex-end;
-  /* background-color:rgba(103, 207, 42, 0.3); */
-    background-color:rgba(50, 50, 50);
+  background-color:rgba(50, 50, 50, 0.8);
+    /* background-color:rgba(50, 50, 50); */
   z-index: 2;  
 }
 
