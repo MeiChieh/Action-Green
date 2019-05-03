@@ -119,6 +119,7 @@ export default {
 
             const zIndexArr = [[-1,-2,-3], [-2,-1,-3], [-2,-3,-1]];
             const ratioScroll = [
+                //[ratioStart, ratioEnd, break1, break2]
                 [0, 0.6, 0.25, 0.5],
                 [0.6, 1.1, 0.15, 0.517],
                 [1.1, 1.5, 0.2, 0.54],
