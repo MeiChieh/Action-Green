@@ -1,11 +1,13 @@
 <template>
 <div class='imgword'>
-        <!-- <img :src="`${imgStyle}`" :style="{position: fixed, top: top }" v-show='showBgImg'> -->
-        <!-- <img :src="`${imgStyle}`" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
+        <img :src="`${bgImg}`" 
+             :style="{zIndex: zIndex, position: fixed, top: top }">
 
-        <img :src="`${bgImg}`" :style="{zIndex: zIndex, position: fixed, top: top }">
         <div class='transparent'>
-            <div id='textbox' :style='{backgroundColor: txtBgColor, color: txtColor}'>
+            
+            <div id='textbox' 
+                 :style='{backgroundColor: txtBgColor, color: txtColor}'>
+
                 <div v-if='title' id='title'>{{title}}</div>
                 <div v-else></div>
                 <div id='paragraph'> {{paragraph}} </div> 
@@ -93,15 +95,6 @@ img{
   z-index: -1;
 }
 
-/* .imgStyle{
-  object-fit: cover;
-  position: fixed;
-  top: 0vh;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-} */
-
 .transparent{
     position:absolute;
     height: 90vh;
@@ -112,9 +105,7 @@ img{
 }
 #textbox{
     padding: 2em 1em;
-    text-align: center;
-    
-    
+    text-align: center;  
 }
 #title{
     font-size: 2em;

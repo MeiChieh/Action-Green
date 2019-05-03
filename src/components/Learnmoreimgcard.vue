@@ -1,8 +1,13 @@
 <template>
        <div id='learnmoreimgcard'>
-        <div id='cardimg' v-if='learnMore.img != false' :style="{backgroundImage:`url(${showImg})`}" ></div>
-        <div id='cardimg' v-else v-show='false'></div>
-
+        <div id='cardimg' 
+             v-if='learnMore.img != false' 
+             :style="{backgroundImage:`url(${showImg})`}" >
+        </div>
+        <div id='cardimg' 
+             v-else 
+             v-show='false'>
+        </div>
         <div id='textbox'>
             <div id='title'>{{learnMore.title}}</div>
             <div id='paragraph'>{{learnMore.paragraph}}</div>
@@ -119,8 +124,4 @@ export default {
     margin-inline-end: 3em;
     }     
 }
-
-
-
-
 </style>

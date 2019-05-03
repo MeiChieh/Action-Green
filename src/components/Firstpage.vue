@@ -1,15 +1,16 @@
 <template>
 <div class='firstpage'>
     <Navbar></Navbar>
-    <img src="../assets/images/fs-plasticgrey-q5s80.jpg" alt="" :style="{zIndex: zIndex}"> 
-    <!-- <img src="../assets/images/whitegreen-q5s70.jpg" alt="" :style="{zIndex: zIndex}" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
-    <!-- <img src="../assets/images/whitegreen-q5s70.jpg" alt="" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
-    
+    <img src="../assets/images/fs-plasticgrey-q5s80.jpg" 
+         alt="" 
+         :style="{zIndex: zIndex}">     
     <div id='titlebox'>
       <div class='maintitle'>Action <span id='green'>Green</span></div>
       <div class='mainsubtitle'><span id='green'>Let's </span> Solve The Plastic Problem</div>   
     </div>
-    <div id='slideshow'><Slideshow></Slideshow></div>
+    <div id='slideshow'>
+      <Slideshow></Slideshow>
+    </div>
 </div>
     
 </template>
@@ -42,13 +43,6 @@ export default {
   margin:0;
 }
 
-/* #link{
-  height: 110vh;  
-  width: 100vw; 
-  font-size:15px;
-  margin:0;
-} */
-
 img{
   object-fit: cover;
   position: fixed;
@@ -56,16 +50,6 @@ img{
   width: 100%;
   height: 100%;
 }
-
-/* .imgStyle{
-  object-fit: cover;
-  position: fixed;
-  top: 0vh;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-} */
 
 body{
   margin:0;  
@@ -84,7 +68,6 @@ body{
   text-align: center;
   text-decoration: underline; 
   position: relative;
-  /* color:white; */
   color:rgba(1,1,1,0.8);
   font-weight: bold;
 
@@ -95,13 +78,10 @@ body{
   text-align: center;
   padding-bottom: 0.5em;
   font-weight: bold;
-  /* color:white;  */
     color:rgba(1,1,1,0.8);
 }
 #green{
-  /* color:#3ECF2A; */
   color: #009900;
-  /* color: #82b74b; */
   
 }
 
@@ -109,8 +89,6 @@ body{
   .firstpage{
     font-size: 16px;
   }
-
-
 }
 
 @media only screen and (min-width:768px){

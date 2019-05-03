@@ -1,5 +1,7 @@
 <template>
-<div class='learnmorebtn' :class='{minify: isMinify}' v-hammer:tap='onTap'>
+<div class='learnmorebtn' 
+     :class='{minify: isMinify}' 
+     v-hammer:tap='onTap'>
     <div id='txt'>Learn More</div>
 </div>
     

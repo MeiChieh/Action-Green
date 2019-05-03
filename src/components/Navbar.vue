@@ -3,7 +3,11 @@
         <a href="#home" class='router home'>Home</a>
         <a href="#about" class='router about'>About</a>
         <a href="#donate" class='router donate'>Donate</a>
-        <a href="https://www.linkedin.com/in/mei-chieh-chien-68304798/" target='_blank' class='router contact'>Contact</a>
+        <a href="https://www.linkedin.com/in/mei-chieh-chien-68304798/" 
+           target='_blank' 
+           class='router contact'>
+           Contact
+        </a>
 
     </nav>
 </template>

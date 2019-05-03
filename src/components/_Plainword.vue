@@ -8,7 +8,6 @@
 <script>
 export default {
     name: 'plainword',
-    // props:['word', 'bgColor'],
     props:{
         word:{
             type: String,
@@ -35,9 +34,7 @@ export default {
     align-items: center;
     font-family:sans-serif;  
     font-weight:bold;
-    /* color:white; */
     color:rgba(50,50,50);
-    /* text-shadow: 1px 1px 1px rgba(1,1,1,0.5);  */
 
 }
 

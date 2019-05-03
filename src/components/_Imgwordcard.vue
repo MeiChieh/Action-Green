@@ -1,10 +1,7 @@
 <template>
     <div id='imgwordcard'>
-        <img :src="`${showImg}`" :style="{zIndex: zIndex, position: fixed, top: top}">
-
-        <!-- <img :src="`${showImg}`" :style="{position: fixed, top: top}" v-show='showBgImg'> -->
-        <!-- <img :src="`${showImg}`" :class='{imgStyle : showBgImg}'> -->
-
+        <img :src="`${showImg}`" 
+             :style="{zIndex: zIndex, position: fixed, top: top}">
         <div id='transparent' :style="{background: bgTransparent} ">
             <div id='txtbox'>
                 <div id='title'>
@@ -17,10 +14,19 @@
             <div id='container'>
               <div class='flex-col'>
                   <div class='flex-col-up'>
-                    <Readmoreimg v-for="(value, key) in flexFirst" :key='key' :readmoreImg='value' :readmoreImgTxt='flexFirstTxt[key]' :noImgShadow="noImgShadow"></Readmoreimg>
+                    <Readmoreimg v-for="(value, key) in flexFirst" 
+                                 :key='key' 
+                                 :readmoreImg='value' 
+                                 :readmoreImgTxt='flexFirstTxt[key]' 
+                                 :noImgShadow="noImgShadow">
+                    </Readmoreimg>
                   </div>
                   <div class='flex-col-down'>
-                    <Readmoreimg v-for="(value, key) in flexSecond" :key='key' :readmoreImg='value' :readmoreImgTxt='flexSecondTxt[key]' :noImgShadow="noImgShadow"></Readmoreimg>
+                    <Readmoreimg v-for="(value, key) in flexSecond" 
+                                 :key='key' :readmoreImg='value' 
+                                 :readmoreImgTxt='flexSecondTxt[key]' 
+                                 :noImgShadow="noImgShadow">
+                    </Readmoreimg>
                   </div>
               </div>  
 

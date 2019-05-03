@@ -11,10 +11,19 @@
             <div id='container'>
               <div class='flex-col'>
                   <div class='flex-col-up' :style="{width: flexWidth}">
-                    <Readmoreimg v-for="(value, key) in flexFirst" :key='key' :readmoreImg='value' :readmoreImgTxt='flexFirstTxt[key]' :noImgShadow="noImgShadow"></Readmoreimg>
+                    <Readmoreimg v-for="(value, key) in flexFirst" 
+                                 :key='key' 
+                                 :readmoreImg='value' 
+                                 :readmoreImgTxt='flexFirstTxt[key]' 
+                                 :noImgShadow="noImgShadow">
+                    </Readmoreimg>
                   </div>
                   <div class='flex-col-down' :style="{width: flexWidth0}">
-                    <Readmoreimg v-for="(value, key) in flexSecond" :key='key' :readmoreImg='value' :readmoreImgTxt='flexSecondTxt[key]' :noImgShadow="noImgShadow"></Readmoreimg>
+                    <Readmoreimg v-for="(value, key) in flexSecond" 
+                                 :key='key' :readmoreImg='value' 
+                                 :readmoreImgTxt='flexSecondTxt[key]' 
+                                 :noImgShadow="noImgShadow">
+                    </Readmoreimg>
                   </div>
               </div>           
            </div>
@@ -183,8 +192,6 @@ export default {
         width: 50%;
         justify-content: space-around;
     }
-
-
 }
 
 </style>

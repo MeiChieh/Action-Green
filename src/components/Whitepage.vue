@@ -1,7 +1,9 @@
 <template>
     <div class='thirdpage'>
         <div class="flex1">
-            <div id='first'> <Learnmoreimgcard :learnMore='learnMore.learnMore1'></Learnmoreimgcard> </div>               
+            <div id='first'> 
+                <Learnmoreimgcard :learnMore='learnMore.learnMore1'></Learnmoreimgcard> 
+            </div>               
             <div class=' flex2 pad'>
                 <div id='second' class='flex50'> <Learnmoreimgcard :learnMore='learnMore.learnMore2'></Learnmoreimgcard> </div>
                 <div id='third' class='flex50'> <Learnmoreimgcard :learnMore='learnMore.learnMore3'></Learnmoreimgcard> </div>
@@ -41,7 +43,6 @@ export default {
     justify-content: space-around;
     width: 80vw;
     margin: 3em 10vw;
-    /* border: solid blue; */
 }
 
 .flex2{
@@ -49,7 +50,6 @@ export default {
     flex-direction: column;
     justify-content: space-around;
 }
-
 
 
 @media only screen and (min-width: 768px){
@@ -71,10 +71,5 @@ export default {
         width: 36vw;
     }
 } 
-
-
-
-
-
 
 </style>

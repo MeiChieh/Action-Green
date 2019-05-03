@@ -1,8 +1,15 @@
 <template>
-    <div class='readmoreimg' :style="{backgroundImage: `url(${showImg})`, boxShadow: noImgShadow}">
+    <div class='readmoreimg' 
+         :style="{backgroundImage: `url(${showImg})`, boxShadow: noImgShadow}">
           <div class="txtbox" :class="{shift: isShift}">
               <div id='intro'>{{readmoreImgTxt}}</div>
-              <div id='readmorebtn-pos' @mouseenter="shiftTxt" @mouseleave="shiftTxt" v-hammer:tap='shiftTxt'><Readmorebtn></Readmorebtn></div>
+
+              <div id='readmorebtn-pos' 
+                   @mouseenter="shiftTxt" 
+                   @mouseleave="shiftTxt" 
+                   v-hammer:tap='shiftTxt'>
+                   <Readmorebtn></Readmorebtn>
+              </div>
           </div>             
     </div>
 </template>
@@ -87,8 +94,6 @@ export default {
     text-align: justify;
     word-break: break-word;
     hyphens: auto;
-
-
 }
 
 #readmorebtn-pos{
@@ -109,7 +114,6 @@ export default {
     margin-inline-start: 2em;
     margin-inline-end: 2em;
     }
-
 }
 
 @media only screen and (min-width: 768px){
@@ -117,8 +121,7 @@ export default {
         font-size: 25px; 
         width: 47%;
         height: 40vh;
-    }
-    
+    }   
 }
 
 @media only screen and (min-width: 1023px){
@@ -126,8 +129,7 @@ export default {
         font-size: 25px; 
         width: 47%;
         height: 50vh;
-    }
-    
+    }    
 }
 
 
