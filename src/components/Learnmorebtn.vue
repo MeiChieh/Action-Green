@@ -43,11 +43,6 @@ export default {
     margin: auto;
 }
 
-/* .learnmorebtn:hover{
-    cursor: pointer;
-    transform:scale(1.2);
-} */
-
 .minify{
     transform:scale(0.9);
 }
