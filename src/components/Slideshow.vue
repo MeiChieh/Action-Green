@@ -50,29 +50,29 @@ export default {
 }
 #child1{
     opacity: 1;
-    background-image:url('../media/fs-plasticveg-q5s30.jpg');
+    background-image:url('../assets/images/fs-plasticveg-q5s30.jpg');
     background-size:cover;
     background-position: center;
 }
 #child2{
-    background-image:url('../media/fs-plasticbottles-q10s30.jpg');
+    background-image:url('../assets/images/fs-plasticbottles-q10s30.jpg');
     background-size:cover;
     background-position: center;
 }
 #child3{
-    background-image:url('../media/fs-beach-cup-q3s20.jpg');
+    background-image:url('../assets/images/fs-beach-cup-q3s20.jpg');
     background-size:cover;
     background-position: center;
 
 }
 #child4{
-    background-image:url('../media/fs-beach-bottles-q10s30.jpg');
+    background-image:url('../assets/images/fs-beach-bottles-q10s30.jpg');
     background-size:cover;
     background-position: center;
 
 }
 #child5{
-    background-image:url('../media/plastic-whale-q5s50.jpg');
+    background-image:url('../assets/images/plastic-whale-q5s50.jpg');
     background-size:cover;
     background-position: center;
 }

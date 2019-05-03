@@ -4,22 +4,22 @@
       <div id='icons'>
         <div id='fb' class='icon'>
             <a href="https://icons8.com/icon/13912/facebook">
-              <img src="../media/fb.svg">
+              <img src="../assets/images/fb.svg">
             </a>
         </div>
         <div id='ig' class='icon'>
             <a href="https://icons8.com/icon/32323/instagram">
-              <img src="../media/ig.svg">
+              <img src="../assets/images/ig.svg">
             </a>
         </div>
         <div id='yt' class='icon'>
             <a href="https://icons8.com/icon/13983/youtube">
-              <img src="../media/yt.svg">
+              <img src="../assets/images/yt.svg">
             </a>
         </div>
         <div id='gm' class='icon'>
             <a href="https://icons8.com/icon/32215/google-maps">
-              <img src="../media/gm.svg">
+              <img src="../assets/images/gm.svg">
 
             </a>
         </div>

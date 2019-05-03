@@ -21,7 +21,7 @@ export default {
     props:['learnMore', 'obj'],
     computed:{
         showImg(){
-            return require(`../media/${this.learnMore.img}`)
+            return require(`../assets/images/${this.learnMore.img}`)
         },
     },
 

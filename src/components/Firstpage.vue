@@ -1,9 +1,9 @@
 <template>
 <div class='firstpage'>
     <Navbar></Navbar>
-    <img src="../media/fs-plasticgrey-q5s80.jpg" alt="" :style="{zIndex: zIndex}"> 
-    <!-- <img src="../media/whitegreen-q5s70.jpg" alt="" :style="{zIndex: zIndex}" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
-    <!-- <img src="../media/whitegreen-q5s70.jpg" alt="" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
+    <img src="../assets/images/fs-plasticgrey-q5s80.jpg" alt="" :style="{zIndex: zIndex}"> 
+    <!-- <img src="../assets/images/whitegreen-q5s70.jpg" alt="" :style="{zIndex: zIndex}" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
+    <!-- <img src="../assets/images/whitegreen-q5s70.jpg" alt="" :class='{imgStyle:showBgImg}' v-show='showBgImg'> -->
     
     <div id='titlebox'>
       <div class='maintitle'>Action <span id='green'>Green</span></div>

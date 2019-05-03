@@ -93,7 +93,7 @@ export default {
     components:{Readmoreimg},
     computed:{
         showImg(){
-            return require(`../media/${this.bgImg}`)
+            return require(`../assets/images/${this.bgImg}`)
         }
     },
 }

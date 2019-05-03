@@ -55,9 +55,10 @@ export default {
 @media only screen and (min-width: 768px){
     .flex2{
         flex-direction: row;
+        justify-content: space-between;
     }
     .flex50{
-        width: 37.5vw;
+        width: 38vw;
     }
 } 
 
@@ -67,7 +68,7 @@ export default {
         margin: 3em 12.5vw;
     }
     .flex50{
-        width: 35vw;
+        width: 36vw;
     }
 } 
 

@@ -61,7 +61,7 @@ export default {
     },
     computed:{
         bgImg(){
-          return require(`../media/${this.imgUrl}`)  
+          return require(`../assets/images/${this.imgUrl}`)  
         },        
     },  
 }

@@ -40,7 +40,7 @@ export default {
     },
     computed:{
         showImg(){
-            return require(`../media/${this.readmoreImg}`)
+            return require(`../assets/images/${this.readmoreImg}`)
         },
     },
 }

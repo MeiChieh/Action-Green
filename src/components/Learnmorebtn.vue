@@ -10,7 +10,6 @@ import { setTimeout } from 'timers';
 export default {
     name:'learnmorebtn',
     data(){return{
-        isMagnify: false,
         isMinify: false,
     }},
     methods:{
