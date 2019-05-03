@@ -35,7 +35,7 @@ export default {
         shiftBack(){
             setTimeout( ()=>{
                 this.isMinify = !this.isMinify;
-            }, 200)
+            }, 250)
         }
 
     },
@@ -50,12 +50,7 @@ export default {
     justify-content: center;
     align-items: center;  
     transition: transform 0.3s;
-    font-size:7px;
-    
-}
-.readmorebtn:hover{
-    cursor: pointer;
-    transform:scale(1.15);
+    font-size:7px;    
 }
 
 .minify{
@@ -85,5 +80,14 @@ export default {
     font-family: sans-serif;
     text-shadow: 3px 3px 5px rgb(81, 85, 81, 1);
 }
+
+@media only screen and (min-width: 420px) {
+    .readmorebtn:hover{
+        cursor: pointer;
+        transform: scale(1.15);
+    }
+}
+
+
 
 </style>

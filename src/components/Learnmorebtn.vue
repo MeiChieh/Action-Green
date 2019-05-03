@@ -43,10 +43,10 @@ export default {
     margin: auto;
 }
 
-.learnmorebtn:hover{
+/* .learnmorebtn:hover{
     cursor: pointer;
     transform:scale(1.2);
-}
+} */
 
 .minify{
     transform:scale(0.9);
@@ -57,6 +57,10 @@ export default {
 @media only screen and (min-width: 420px){
     .learnmorebtn{
         font-size: 20px;
+    }
+    .learnmorebtn:hover{
+        cursor: pointer;
+        transform: scale(1.15);
     }
 }
 
