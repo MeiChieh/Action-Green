@@ -58,6 +58,7 @@ export default {
 .readmoreimg{
     width: 100%;
     height: 60vh;
+    max-height: 310px;
     background: linear-gradient(to bottom rgba(0,0,0,0) rgba(0,0,0,8));
     background-size: cover;
     background-position: center;
@@ -104,11 +105,12 @@ export default {
 }
 
 
+
 @media only screen and (min-width: 420px){
     .readmoreimg{
         font-size: 20px; 
         width: 47%;
-        height: 40vh;
+        height: 50vh;
     }
     #intro{
     margin-inline-start: 2em;
@@ -118,19 +120,50 @@ export default {
 
 @media only screen and (min-width: 768px){
     .readmoreimg{
-        font-size: 25px; 
+        font-size: 24px; 
         width: 47%;
         height: 40vh;
     }   
 }
 
-@media only screen and (min-width: 1023px){
+@media only screen and (min-width: 812px){
     .readmoreimg{
-        font-size: 25px; 
+      height: 75vh;
+  } 
+}
+
+@media only screen and (min-width: 1024px){
+    .readmoreimg{
+        font-size: 24px; 
         width: 47%;
-        height: 50vh;
+        height: 47vh;
     }    
 }
+
+/* @media only screen 
+and (device-width : 375px) 
+and (device-height : 812px)
+and (orientation: landscape)
+{
+  .readmoreimg{
+      height: 75vh;
+  }
+
+}
+
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px)
+and (orientation: portrait)
+{
+  .readmoreimg{
+      height: 45vh;
+  }
+
+} */
+
+
+
 
 
 </style>

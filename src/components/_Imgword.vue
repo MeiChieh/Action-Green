@@ -3,11 +3,9 @@
         <img :src="`${bgImg}`" 
              :style="{zIndex: zIndex, position: fixed, top: top }">
 
-        <div class='transparent'>
-            
+        <div class='transparent'>            
             <div id='textbox' 
                  :style='{backgroundColor: txtBgColor, color: txtColor}'>
-
                 <div v-if='title' id='title'>{{title}}</div>
                 <div v-else></div>
                 <div id='paragraph'> {{paragraph}} </div> 
@@ -99,20 +97,13 @@ img{
     position:absolute;
     height: 90vh;
     width: 100vw;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 #textbox{
     padding-top: 2em 1em;
     text-align: center;  
-    /* flex: 1; */
-    /* border: solid green; */
-    /* position: absolute; */
-    /* top: 15vh;
-    bottom: 20vh; */
-    /* margin-top: 20vh; */
-
 }
 #title{
     font-size: 2em;
@@ -160,25 +151,61 @@ img{
 
 }
 
+/* @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: landscape){
+        #textbox{
+        border: solid green;
+    
+    }
+        
+} */
+
+
 @media only screen and (min-width: 768px){
     .imgword{
         font-size: 20px;
+        height: 80vh;
+    }
+    .img{
+        height: 80vh;
+    }
+    .transparent{
+        height: 80vh;
+    }
+    #textbox{
+        padding: 3em 3em;  
+    }
+
+}
+
+@media only screen 
+    and (min-width: 1025px){
+    .imgword{
         height: 90vh;
     }
+
+    .transparent{
+        height: 90vh;
+    }
+
     #textbox{
         padding: 3em 3em;    
+        margin-bottom: 0vh;
     }
 
 }
 
-@media only screen and (min-width: 1023px){
-    .imgword{
-        height: 100vh;
-    }
-    #textbox{
-        padding: 3em 3em;    
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: landscape){
+        #textbox{
+        border: solid green;
     }
 
-}
-
+    }
 </style>

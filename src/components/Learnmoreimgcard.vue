@@ -38,6 +38,7 @@ export default {
     box-sizing: border-box;
     width: 100%;
     height: auto;
+    /* max-height: 550px; */
     background-color: lightblue;
     padding-bottom: 5em;
     margin-bottom: 2em;
@@ -101,7 +102,7 @@ export default {
         height: 13vh;
     }
     #learnmorebtn-pos{
-    margin-top: 1.5em;
+        margin-top: 1.5em;
 }
 }
 
@@ -115,7 +116,7 @@ export default {
     }
 }
 
-@media only screen and (min-width: 1023px){
+@media only screen and (min-width: 1024px){
     #learnmoreimgcard{
         font-size: 18px;
     }
@@ -124,4 +125,20 @@ export default {
     margin-inline-end: 3em;
     }     
 }
+/* @media only screen 
+and (min-device-width : 375px) 
+and (max-device-height : 812px)
+and (orientation: landscape)
+{
+  .firstpage{
+    height: 120vh;
+  }
+  #titlebox{
+    margin-top: 3em;
+  }
+  .slideshow{
+    bottom: 30vh;
+  }
+
+} */
 </style>

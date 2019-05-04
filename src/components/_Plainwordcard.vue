@@ -120,7 +120,6 @@ export default {
 
 #paragraph{
     text-align: justify;
-    padding-top: 0.5em;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
 }
@@ -169,6 +168,9 @@ export default {
         font-size:25px;
         padding-top: 4em;
         padding-bottom: 4em;
+    }
+    #paragraph{
+        padding-top:0px;
     }
 }
 

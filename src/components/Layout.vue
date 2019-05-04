@@ -122,11 +122,9 @@ export default {
             const ratioScroll = [
                 //[ratioStart, ratioEnd, break1, break2]
                 [0, 0.6, 0.25, 0.5],           //phone
-                [0.6, 1.1, 0.15, 0.51],       //tablet portrait
-                [1.1, 1.5, 0.2, 0.52],         //ipad landscape
-                [1.5, 3, 0.24, 0.45]   // desktop, tablet landscape  
-                // iphone8 landscape : 1.77
-                // [1,75, Infinity, ]                            // phone landscape > 1.75
+                [0.6, 1.1, 0.2, 0.519],       //tablet portrait
+                [1.1, 1.5, 0.2, 0.48],         //ipad landscape
+                [1.5, Infinity, 0.24, 0.478]   // desktop, tablet landscape  
             ];
 
             ratioScroll.forEach((item)=> {

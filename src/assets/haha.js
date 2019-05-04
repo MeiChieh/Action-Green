@@ -1,23 +1,62 @@
 <template>
     <div id='slideshow'>
         <div id='flex-container'>
-            <div class='child child1'></div> 
-            
-            <div class='child child2'></div> 
-            
-            <div class='child child3'> </div> 
-           
-            <div class='child child4'></div> 
-            
-            <div class='child child5'></div> 
-            
+            <div class='child child1' 
+                 v-hammer:tap='onTap1' 
+                 :class='{"flex9": tapped1}'>
+            </div>
+            <div class='child child2' 
+                 v-hammer:tap='onTap2' 
+                 >
+            </div>
+            <div class='child child3' 
+                 v-hammer:tap='onTap3' 
+                 >
+            </div>
+            <div class='child child4' 
+                 v-hammer:tap='onTap4' 
+                 >
+            </div>
+            <div class='child child5' 
+                 v-hammer:tap='onTap5' 
+                 >
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import Vue from "vue";
+import { VueHammer } from 'vue2-hammer';
+Vue.use(VueHammer);
+
 export default {
   name:'slideShow',
+  data(){return{
+      tapped1: false,
+      tapped2: false,
+      tapped3: false,
+      tapped4: false,
+      tapped5: false,
+  }},
+  methods:{
+      onTap1(){
+          this.tapped1 = true;
+      },
+      onTap2(){
+          this.tapped2 = true;
+      },
+      onTap3(){
+          this.tapped3 = true;
+      },
+      onTap4(){
+          this.tapped4 = true;
+      },
+      onTap5(){
+          this.tapped5 = true;
+      },
+
+  },
 }
   
 </script>
@@ -31,7 +70,7 @@ export default {
 
 #flex-container{
     display:flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     height: 55vh;
@@ -86,13 +125,13 @@ export default {
         height: 30vh;
     }
 }
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-height : 812px)
-and (orientation: portrait)
-{
-#flex-container{
-    height: 50vh;
-}
-}
+
+/* @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (orientation: landscape){
+        
+    } */
+
+
 </style>

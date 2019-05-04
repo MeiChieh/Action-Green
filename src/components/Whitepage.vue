@@ -8,7 +8,7 @@
                 <div id='second' class='flex50'> <Learnmoreimgcard :learnMore='learnMore.learnMore2'></Learnmoreimgcard> </div>
                 <div id='third' class='flex50'> <Learnmoreimgcard :learnMore='learnMore.learnMore3'></Learnmoreimgcard> </div>
             </div>
-            <div id='disclaimer'>* Disclaimer: Action Green project is a fictional organisation. </br> It is a practice project of Mei-Chieh Chien. </div>
+            <div id='disclaimer'>* Disclaimer: Action Green project is a fictional organisation. It is a practice project of Mei-Chieh Chien. </div>
         </div>                
     </div>
 </template>
@@ -24,7 +24,6 @@ export default {
         },
         
     },
-
     components:{Learnmoreimgcard},
 
 }
@@ -54,6 +53,9 @@ export default {
 
 #disclaimer{
     text-align: center;
+    word-break: break-word;
+    hyphens: auto;
+
 }
 
 

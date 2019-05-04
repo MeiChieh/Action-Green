@@ -1,15 +1,15 @@
 <template>
 <div class='firstpage'>
     <Navbar></Navbar>
-    <Scrollindicator></Scrollindicator>
+    <!-- <Scrollindicator></Scrollindicator> -->
     <img src="../assets/images/fs-plasticgrey-q5s80.jpg" 
          alt="" 
          :style="{zIndex: zIndex}">     
     <div id='titlebox'>
       <div class='maintitle'>Action <span id='green'>Green</span></div>
-      <div class='mainsubtitle'><span id='green'>Let's </span> Solve The Plastic Problem</div>   
+      <div class='subtitle'><span id='green'>Let's </span> Solve The Plastic Problem</div>   
     </div>
-    <div id='slideshow'>
+    <div class='slideshow'>
       <Slideshow></Slideshow>
     </div>
 </div>
@@ -19,12 +19,10 @@
 <script>
 import Slideshow from './Slideshow.vue';
 import Navbar from './Navbar.vue';
-import Scrollindicator from './Scrollindicator'
 
 export default {
     name:'firstpage',
-    // components:{Slideshow, Navbar},
-        components:{Slideshow, Scrollindicator, Navbar},
+    components:{Slideshow, Navbar},
     props:{
       zIndex: {
         type: Number,
@@ -57,7 +55,7 @@ img{
 body{
   margin:0;  
 }
-#slideshow{
+.slideshow{
   width: 80vw;
   margin: auto;
 }
@@ -75,7 +73,7 @@ body{
   font-weight: bold;
 
 }
-.mainsubtitle{
+.subtitle{
   font-size: 0.83em;
   font-family: Impact, sans-serif;
   text-align: center;
@@ -92,6 +90,10 @@ body{
   .firstpage{
     font-size: 16px;
   }
+  #titlebox{
+    margin-top: 17vh;
+    padding-top: 1em;
+  }
 }
 
 @media only screen and (min-width:768px){
@@ -103,13 +105,14 @@ body{
   #titlebox{
     margin-top: 15vh;
   }
-  #slideshow{
+  .slideshow{
     margin-top: 5vh;
     width: 70vw;
   }
 
 }
 
+    
 @media only screen and (min-width: 1200px){
   .firstpage{
     font-size: 25px;
@@ -121,6 +124,40 @@ body{
   #slideshow{
     width: 65vw;
   }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-height : 812px)
+and (orientation: portrait)
+{
+  .firstpage{
+    height: 80vh;
+  }
+  #titlebox{
+    margin-top: 5em;
+  }
+  .slideshow{
+    bottom: 30vh;
+  }
+
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-height : 812px)
+and (orientation: landscape)
+{
+  .firstpage{
+    height: 120vh;
+  }
+  #titlebox{
+    margin-top: 3em;
+  }
+  .slideshow{
+    bottom: 30vh;
+  }
+
 }
 
 </style>
