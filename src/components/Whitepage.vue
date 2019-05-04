@@ -8,7 +8,7 @@
                 <div id='second' class='flex50'> <Learnmoreimgcard :learnMore='learnMore.learnMore2'></Learnmoreimgcard> </div>
                 <div id='third' class='flex50'> <Learnmoreimgcard :learnMore='learnMore.learnMore3'></Learnmoreimgcard> </div>
             </div>
-            <div id='disclaimer'>* Disclaimer: Action Green project is a fictional organisation. It is a practice project of Mei-Chieh Chien. </div>
+            <div id='disclaimer'>* Disclaimer: Action Green is a fictional organisation. It is a practice project of Mei-Chieh Chien. </div>
         </div>                
     </div>
 </template>
