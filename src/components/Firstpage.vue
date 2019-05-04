@@ -19,10 +19,12 @@
 <script>
 import Slideshow from './Slideshow.vue';
 import Navbar from './Navbar.vue';
+// import Scrollindicator from './Scrollindicator'
 
 export default {
     name:'firstpage',
     components:{Slideshow, Navbar},
+        // components:{Slideshow, Scrollindicator, Navbar},
     props:{
       zIndex: {
         type: Number,
