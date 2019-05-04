@@ -104,8 +104,15 @@ img{
     align-items:center;
 }
 #textbox{
-    padding: 2em 1em;
+    padding-top: 2em 1em;
     text-align: center;  
+    /* flex: 1; */
+    /* border: solid green; */
+    /* position: absolute; */
+    /* top: 15vh;
+    bottom: 20vh; */
+    /* margin-top: 20vh; */
+
 }
 #title{
     font-size: 2em;
@@ -156,6 +163,7 @@ img{
 @media only screen and (min-width: 768px){
     .imgword{
         font-size: 20px;
+        height: 90vh;
     }
     #textbox{
         padding: 3em 3em;    

@@ -57,12 +57,14 @@ export default {
         cursor: pointer;
         transform: scale(1.15);
     }
+    
 }
 
 @media only screen and (min-width: 768px){
     .learnmorebtn{
         font-size: 25px;
     }
+    
 }
 
 

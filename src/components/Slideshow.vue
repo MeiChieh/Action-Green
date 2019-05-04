@@ -1,25 +1,19 @@
 <template>
     <div id='slideshow'>
         <div id='flex-container'>
-            <div class='child child1' 
-                 v-hammer:tap='onTap1' 
-                 :class='{"flex9": tapped1}'>
+            <div class='child child1'> 
             </div>
-            <div class='child child2' 
-                 v-hammer:tap='onTap2' 
-                 >
+            <div class='child child2'> 
+                 
             </div>
-            <div class='child child3' 
-                 v-hammer:tap='onTap3' 
-                 >
+            <div class='child child3'> 
+                 
             </div>
-            <div class='child child4' 
-                 v-hammer:tap='onTap4' 
-                 >
+            <div class='child child4'> 
+                 
             </div>
-            <div class='child child5' 
-                 v-hammer:tap='onTap5' 
-                 >
+            <div class='child child5'> 
+                 
             </div>
         </div>
     </div>
@@ -40,21 +34,21 @@ export default {
       tapped5: false,
   }},
   methods:{
-      onTap1(){
-          this.tapped1 = true;
-      },
-      onTap2(){
-          this.tapped2 = true;
-      },
-      onTap3(){
-          this.tapped3 = true;
-      },
-      onTap4(){
-          this.tapped4 = true;
-      },
-      onTap5(){
-          this.tapped5 = true;
-      },
+    //   onTap1(){
+    //       this.tapped1 = true;
+    //   },
+    //   onTap2(){
+    //       this.tapped2 = true;
+    //   },
+    //   onTap3(){
+    //       this.tapped3 = true;
+    //   },
+    //   onTap4(){
+    //       this.tapped4 = true;
+    //   },
+    //   onTap5(){
+    //       this.tapped5 = true;
+    //   },
 
   },
 }
@@ -76,19 +70,13 @@ export default {
     height: 55vh;
 }
 
-.flex9{
-    /* flex:9; */
-    width: 50%;
-    border: solid green;
-}
-
 .child{
     flex:1;
     transition:flex 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-/* .child:hover{
+.child:hover{
     flex:9;
-} */
+}
 .child1{
     opacity: 1;
     background-image: url('../assets/images/fs-plasticveg-q5s30.jpg');
@@ -119,9 +107,9 @@ export default {
 }
 
 @media only screen and (min-width: 420px){
-    .child:hover{
+    /* .child:hover{
       flex:9;
-    }
+    } */
 }
 
 @media only screen and(min-width:768px){
@@ -130,6 +118,13 @@ export default {
         height: 30vh;
     }
 }
+
+/* @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (orientation: landscape){
+        
+    } */
 
 
 </style>

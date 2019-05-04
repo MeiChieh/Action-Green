@@ -11,7 +11,7 @@ const imgWord2 = {
   url: "fs-dairy-q1s22.jpg",
   title: "",
   words:
-    "Since the emergence of the first man-made plastics in 1856, plastic has played an indispensable role. Since this super material, manufactured from petroleum, is light, flexible, and cheap to produce, it is used in all aspects of our lives, ranging from food containers to construction materials. However, despite the numerous advantages of plastic, it has one fatal flaw, it is very hard for plastic to biodegrade. While we enjoy the convenience plastic brings to our life, we seem to ignore the enormous amounts of plastic waste. Most of the plastic waste ends up in the ocean, the big plastic dumpster..."
+    "Since the emergence of the first man-made plastics in 1856, plastic has played an indispensable role. Due to the fact that this super material, manufactured from petroleum, is light, flexible, and cheap to produce, it is used in all aspects of our lives, ranging from food containers to construction materials. However, despite the numerous advantages of plastic, it has one fatal flaw, it is very hard for plastic to biodegrade. While we enjoy the convenience plastic brings to our life, we seem to ignore the enormous amounts of plastic waste. Most of the plastic waste ends up in the ocean, the big plastic dumpster..."
 };
 
 // PlainWordCards: paragraph, imgurlObj, imgtxtObj

@@ -1,6 +1,7 @@
 <template>
 <div class='firstpage'>
     <Navbar></Navbar>
+    <Scrollindicator></Scrollindicator>
     <img src="../assets/images/fs-plasticgrey-q5s80.jpg" 
          alt="" 
          :style="{zIndex: zIndex}">     
@@ -18,10 +19,12 @@
 <script>
 import Slideshow from './Slideshow.vue';
 import Navbar from './Navbar.vue';
+import Scrollindicator from './Scrollindicator'
 
 export default {
     name:'firstpage',
-    components:{Slideshow, Navbar},
+    // components:{Slideshow, Navbar},
+        components:{Slideshow, Scrollindicator, Navbar},
     props:{
       zIndex: {
         type: Number,

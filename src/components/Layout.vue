@@ -113,27 +113,32 @@ export default {
     methods:{
         scrollPros(){
             const el = document.documentElement;
-            const ratio = window.innerWidth/window.innerWidth;
+            const ratio = window.innerWidth/window.innerHeight;
             const y = window.pageYOffset;
             const height = el.scrollHeight;
+            const progress = y/height;
 
             const zIndexArr = [[-1,-2,-3], [-2,-1,-3], [-2,-3,-1]];
             const ratioScroll = [
                 //[ratioStart, ratioEnd, break1, break2]
-                [0, 0.6, 0.25, 0.5],
-                [0.6, 1.1, 0.15, 0.517],
-                [1.1, 1.5, 0.2, 0.54],
-                [1.5, Infinity, 0.24, 0.495]     
+                [0, 0.6, 0.25, 0.5],           //phone
+                [0.6, 1.1, 0.15, 0.51],       //tablet portrait
+                [1.1, 1.5, 0.2, 0.52],         //ipad landscape
+                [1.5, 3, 0.24, 0.45]   // desktop, tablet landscape  
+                // iphone8 landscape : 1.77
+                // [1,75, Infinity, ]                            // phone landscape > 1.75
             ];
 
             ratioScroll.forEach((item)=> {
                 if(ratio > item[0] && ratio < item[1] ) {
-                    if(y < height*item[2]){
+                    // screenW/screenH ratio in between item[0] & item[1]
+                    //y < height*item[2]
+                    if(progress < item[2]){
                         this.zIndexFirst = zIndexArr[0][0];
                         this.zIndexSecond = zIndexArr[0][1];
                         this.zIndexLast = zIndexArr[0][2];
-                    } 
-                    else if(y >= height*item[2] && y <= height*item[3]){
+                    } //y >= height*item[2] && y <= height*item[3]
+                    else if(progress >= item[2] && progress <= item[3]){
                         this.zIndexFirst = zIndexArr[1][0];
                         this.zIndexSecond = zIndexArr[1][1];
                         this.zIndexLast = zIndexArr[1][2];
