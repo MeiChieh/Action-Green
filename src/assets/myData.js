@@ -4,20 +4,20 @@ const imgWord1 = {
   url: "fs-beachclean-q5s40.jpg",
   title: "Welcome to Action Green",
   words:
-    "We are a nonprofit organization focusing on ocean plastic problem. We dedicate ourselves in propagation of plastic recycling, one time plastic use reduction, and ocean preservation. We organize beach cleanup events monthly and support large scale ocean cleanup projects.  We appreciate your concern and support and sincerely invite you to act green to protect our ocean."
+    "We are a nonprofit organisation focusing on the ocean plastic problem. We are dedicated to raising awareness about plastic recycling, reduction of single-use plastics, and ocean preservation. We organise beach cleanup events monthly and support large-scale ocean cleanup projects. We appreciate your support and sincerely urge you to become more green to protect our ocean."
 };
 
 const imgWord2 = {
   url: "fs-dairy-q1s22.jpg",
   title: "",
   words:
-    "Since the emergence of the first man-made plastic material in 1856, plastic has played an indispensable role in human history. This super material manufactured from petrolem is light, flexible, and cheap to produce, thus it is vastly used in all aspect of our lives, from food containers to construction materials. However, despite the numerous advantages of plastic, it has a fatal trait, it is very hard for plastic to biodegrade. While we human enjoying the convenience plastic brings to our life, we seemed to ignore how to deal with plastic waste. Most plastic end up in the ocean, the final dumpster of our plastic wastes..."
+    "Since the emergence of the first man-made plastics in 1856, plastic has played an indispensable role. Since this super material, manufactured from petroleum, is light, flexible, and cheap to produce, it is used in all aspects of our lives, ranging from food containers to construction materials. However, despite the numerous advantages of plastic, it has one fatal flaw, it is very hard for plastic to biodegrade. While we enjoy the convenience plastic brings to our life, we seem to ignore the enormous amounts of plastic waste. Most of the plastic waste ends up in the ocean, the big plastic dumpster..."
 };
 
 // PlainWordCards: paragraph, imgurlObj, imgtxtObj
 // PlainWordCard1
 const plainWordCard1Para =
-  "Have you ever noticed how much single use plastic we are consuming everyday? Do you know where these plastic wastes end up?";
+  "Have you ever noticed how much single-use plastic we consume everyday? Do you know where this plastic ends up?";
 
 const plainWordCard1First = {
   img1: "bag-q3s20.jpg",
@@ -28,18 +28,18 @@ const plainWordCard1Second = {
   img4: "fs-seatrash-q3s50.jpg"
 };
 const plainWordCardtxt1First = {
-  img1: "How much plastic trash do an European create each week on average?",
-  img2: "Only 10% of plastic waste in the world is recycled"
+  img1: "How much plastic waste does a European create each week on average?",
+  img2: "Only 10% of plastic waste in the world is recycled!"
 };
 const plainWordCardtxt1Second = {
-  img3: "Unresolved trash problem is as bad as global warming",
+  img3: "The unresolved waste problem is a threat to our environment on the same scale as global warming.",
   img4:
-    "More than 6 billion kilograms of trash is dumped in to the ocean each year"
+    "More than 6 billion kilograms of waste is dumped in to the ocean each year."
 };
 
 // PlainWordCard2
 const plainWordCard2Para =
-  "Marine creatures and sea birds are great victims to plastic wastes, suffering from the loss of habitat and danger of ingesting plastic waste.";
+  "Marine creatures and sea birds fall victim to plastic waste, suffering from loss of habitat and the danger of ingesting plastic.";
 
 const plainWordCard2First = {
   img1: "fs-birdnet-q3s90.jpg",
@@ -48,9 +48,9 @@ const plainWordCard2First = {
 const plainWordCard2Second = {};
 const plainWordCardtxt2First = {
   img1:
-    "Plastic is found in 90% of sea birds on Earth, and the percentage is still growing",
+    "Plastic is found in 90% of sea birds on Earth, and the percentage is still growing.",
   img2:
-    "Deadly diet: Sea turtles see plastic bags as jelly fish, and plastic nets as sea weed"
+    "Deadly diet: Sea turtles think plastic bags are jelly fish, and plastic nets are sea weed."
 };
 const plainWordCardtxt2Second = {};
 
@@ -63,13 +63,13 @@ const imgWordCard1Second = {
 };
 
 const imgWordCardtxt1First = {
-  img1: "How to make recycling our daily habit, the dos and don'ts"
+  img1: "How to make recycling a daily habit, the DO's and DON'Ts"
 };
 
 const imgWordCardtxt1Second = {
   img1:
-    "Shop smart: minimize plastic consumption starting from grocery shopping",
-  img2: "Great alternative ideas for single-use plastic products"
+    "Shop smart: minimise plastic consumption starting from grocery shopping",
+  img2: "Great alternative ideas for single-use plastic"
 };
 const imgWordCard1BgImg = "fs-cart-q3s35.jpg";
 const imgWordCard1Title = "Everyday Life";
@@ -86,7 +86,7 @@ const learnMore = {
     width: "500",
     title: "Join Action Green Beach Cleanup",
     paragraph:
-      "We organize beach cleanup event every month, join us and  have fun cleaning up the beach together!"
+      "We organise beach cleanup events every month, join us and have fun cleaning up the beach together!"
   },
   learnMore2: {
     img: false,
@@ -94,7 +94,7 @@ const learnMore = {
     width: "325",
     title: "One Off Donation",
     paragraph:
-      "Make one off donation to Action Green. We would send you Action Green stickers and one poster of your choice. "
+      "One-off donation to Action Green and get Action Green stickers."
   },
   learnMore3: {
     img: false,
@@ -102,7 +102,7 @@ const learnMore = {
     width: "325",
     title: "Monthly Donation",
     paragraph:
-      "Make monthly donation to Action Green. We would send you Action Green stickers, two posters of your choice and a Action Green t-shirt."
+      "Monthly donation to Action Green and get Action Green stickers, two posters of your choice, and an Action Green t-shirt."
   }
 };
 
