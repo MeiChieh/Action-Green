@@ -1,4 +1,4 @@
-This is a frontend project propagating the idea of disposable-plastic-use reduction. 
+This is a front-end project aiming to raise the awareness of ocean pollution caused by single-use-plastic.
 
 It is built with Vue.js cli and fully responsiive. 
 
