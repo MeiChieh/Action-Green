@@ -1,4 +1,5 @@
 <template>
+
 <div class='firstpage'>
     <Navbar></Navbar>
     <!-- <Scrollindicator></Scrollindicator> -->
@@ -39,6 +40,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Anton');
 .firstpage{
   height: 110vh;  
   width: 100vw; 
@@ -67,7 +69,7 @@ body{
 }
 .maintitle{
   font-size: 2em;
-  font-family: Impact, sans-serif;
+  font-family: Impact, Anton, sans-serif;
   text-align: center;
   text-decoration: underline; 
   position: relative;
@@ -77,11 +79,13 @@ body{
 }
 .subtitle{
   font-size: 0.83em;
-  font-family: Impact, sans-serif;
+  font-family: Impact, Anton, sans-serif;
   text-align: center;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.7em;
   font-weight: bold;
-    color:rgba(1,1,1,0.8);
+  color:rgba(1,1,1,0.8);
+  font-weight:bold;
+  line-height: 0.6em;
 }
 #green{
   color: #009900;
